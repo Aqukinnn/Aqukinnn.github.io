@@ -12,17 +12,10 @@
     font-family: Arial, Helvetica, sans-serif;
     }
     .b-ground{
-      /* The image used */
       background-image: url("https://pbs.twimg.com/media/E46FrWCXMAEleiV?format=jpg&name=4096x4096");
-      
-      /* Add the blur effect */
       filter: blur(8px);
       -webkit-filter: blur(8px);
-      
-      /* Full height */
       height: 100%; 
-      
-      /* Center and scale the image nicely */
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -38,14 +31,57 @@
       padding: 20px;
       text-align: center;
     }
+    *{
+      padding: 0;
+      margin: 0;
+      font-family: sans-serif;
+    }
+    body{
+      background: #000;
+    }
+    .container{
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 100%;
+    }
+    .container span{
+      text-transform: uppercase;
+      display: block;
+    }
+    .text2{
+      color: white;
+      font-size: 25px;
+      font-weight: 700;
+      letter-spacing: 8px;
+      margin-bottom: 20px;
+      position: relative;
+      animation: text 3s 1;
+    }
+
+    @keyframes text {
+      0%{
+        color: black;
+        margin-bottom: -40px;
+      }
+      30%{
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+      }
+      85%{
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+      }
+    }
+
     </style>
 </head>
 <body >
   <div class="b-ground"> </div>
-  <div class="text"> 
-    <h1 style="text-align:center;float:center;">Welcome to my very first HTML</h1> 
-    <hr style="clear:both;"/><p></p>
-    <a href="Tee.html" style="color: white"> Click to know me</a>
+  <div class="container">
+    <span class="text2">Welcome to my very first HTML <a href="Tee.html" style="color: white"> Click to know me</a> </span>
   </div>
   
 </body>
