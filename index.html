@@ -5,24 +5,49 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My bio</title>
+  <style>
+    body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    .b-ground{
+      /* The image used */
+      background-image: url("https://pbs.twimg.com/media/E46FrWCXMAEleiV?format=jpg&name=4096x4096");
+      
+      /* Add the blur effect */
+      filter: blur(8px);
+      -webkit-filter: blur(8px);
+      
+      /* Full height */
+      height: 100%; 
+      
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .text{
+      color: white;
+      font-weight: bold;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%;
+      padding: 20px;
+      text-align: center;
+    }
+    </style>
 </head>
 <body >
-  <h1>About me   Kritsada Lakhasont</h1> 
-  <br>
-  <img src="https://yt3.ggpht.com/ytc/AKedOLTbU5ET3bgn0Iuz1jUBNjgSe9EW8kLxIhDUrtJlPw=s900-c-k-c0x00ffffff-no-rj" alt="Maid" width="300" height="300">
-  <p></p>
-  <a>This is not my picture but she's my bind</a><br>
-  <a>I'm new with html and i would like to know more about it</a><br>
-  <h2>Down here are lists of my favorite</h2>
-  <ul>
-  	<li>Minato Aqua</li>
-    <img src="https://i.pinimg.com/originals/51/11/1e/51111ec7b46315804196c75853dddc68.gif" alt="maid driving" width="200" height="200">
-    <li>Playing game</li>
-    <li>Reading Manga/Manhwa</li>
-    <li>Sleeping</li>
-    <li>Racing</li>
-    <li>Lising music <a href="https://www.youtube.com/watch?v=6bnaBnd4kyU&t=3s"> This is my fav song</a> </li>
-  </ul>
-  <h2>This is my member of this homework week 1</h2>
+  <div class="b-ground"> </div>
+  <div class="text"> 
+    <h1 style="text-align:center;float:center;">Welcome to my very first HTML</h1> 
+    <hr style="clear:both;"/><p></p>
+    <a href="Tee.html" style="color: white"> Click to know me</a>
+  </div>
+  
 </body>
+
 </html>
